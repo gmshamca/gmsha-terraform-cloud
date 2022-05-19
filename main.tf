@@ -5,11 +5,11 @@ variable "access_key" {}
 variable "secret_key" {}
 variable "subnet_id" {}
 
-resource "aws_instance" "terroform-cloud-demo" {
+resource "aws_instance" "terraform-cloud-demo" {
   ami= var.ami
   region=var.region
   instance_type = var.instance_type
   tags={
-    name="terroform-cloud-demo"
+    name="terraform-cloud-demo"
   }
 }
