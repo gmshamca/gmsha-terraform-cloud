@@ -5,7 +5,7 @@ variable "access_key" {}
 variable "secret_key" {}
 variable "subnet_id" {}
 
-resourece "aws_instance" "terroform-cloud-demo" {
+resource "aws_instance" "terroform-cloud-demo" {
   ami= var.ami
   region=var.region
   instance_type = var.instance_type
