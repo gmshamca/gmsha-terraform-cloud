@@ -7,7 +7,6 @@ variable "subnet_id" {}
 
 resource "aws_instance" "terraform-cloud-demo" {
   ami= var.ami
-  region=var.region
   instance_type = var.instance_type
   tags={
     name="terraform-cloud-demo"
