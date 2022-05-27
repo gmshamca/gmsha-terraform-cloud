@@ -5,16 +5,3 @@ steps:
   - name: maven:3-jdk-8
     entrypoint: mvn
     args: ['test']
-#   - name: 'gcr.io/cloud-builders/gcloud'
-    args:
-    - 'run'
-    - 'deploy'
-    - 'cloudrunservice'
-    - '--image'
-    - 'gcr.io/$PROJECT_ID/hellospringwebapplication'
-    - '--region'
-    - 'us-central1'
-    - '--platform'
-    - 'managed'
-    - '--allow-unauthenticated'
-images: ["gcr.io/$PROJECT_ID/hellospringwebapplication"]
