@@ -5,7 +5,7 @@ steps:
   - name: maven:3-jdk-8
     entrypoint: mvn
     args: ['test']
-  - name: 'gcr.io/cloud-builders/gcloud'
+#   - name: 'gcr.io/cloud-builders/gcloud'
     args:
     - 'run'
     - 'deploy'
